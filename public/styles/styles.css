@@ -1,0 +1,161 @@
+* {
+    cursor: url(/src/imgs/hand-pointer1.png), none;
+}
+
+html body {
+  background-color: #FCBF49;
+}
+
+html {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.3em;
+}
+
+.grid-container {
+  position: relative;
+}
+
+.imagen {
+text-align: center;
+}
+
+.sector-puntaje {
+  display: flex;
+  justify-content: space-around;
+}
+
+.trofeo {
+  width: 52px;
+  height: 45px;
+}
+
+.simon-dice {
+  background: linear-gradient(to bottom, #111 0%, #222 100%);
+  width: 60vmin;
+  height: 50vmin;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  border-radius: 4%;
+  box-shadow: 0 8px 0 #111;
+}
+
+.boton-verde {
+  background: #27ae60;
+  border-radius: 4%;
+  width: 259px;
+  height: 90%;
+  box-shadow: 0 8px 0 #1e8549;
+}
+
+.boton-rojo {
+  background: #e74c3c;
+  border-radius: 4%;
+  width: 259px;
+  height: 90%;
+  box-shadow: 0 8px 0 #da2e1b;
+}
+
+.boton-azul {
+  background: #3498db;
+  border-radius: 4%;
+  width: 259px;
+  height: 90%;
+  box-shadow: 0 8px 0 #1f74ad;
+}
+
+.boton-amarillo {
+  background: #f1c40f;
+    border-radius: 4%;
+  width: 259px;
+  height: 90%;
+  box-shadow: 0 8px 0 #c19c0b;
+}
+
+
+.puntaje,
+.puntaje-ronda,
+.puntaje-maximo,
+.puntaje-total,
+#mensaje {
+  background-color: #FCBF49;
+  border: none;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.puntaje-ronda,
+.puntaje-total {
+  max-width: 25px;
+}
+
+.mensaje {
+  display: flex;
+  justify-content: center;
+}
+
+.start {
+    display: flex;
+  justify-content: center;
+}
+
+.btn-start {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 4px 0 darkslategrey;
+}
+
+.custom-shape-divider-bottom-1621175470 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1621175470 svg {
+    position: relative;
+    display: block;
+    width: calc(225% + 1.3px);
+    height: 226px;
+}
+
+.custom-shape-divider-bottom-1621175470 .shape-fill {
+    fill: #75AADB	;
+}
+
+.custom-shape-divider-top-1621178269 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1621178269 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1621178269 .shape-fill {
+    fill: #75AADB	;
+}
+
+.github a {
+  text-decoration: none;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-github {
+  color: white;
+}
