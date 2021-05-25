@@ -12,7 +12,7 @@ html {
   font-size: 2.3em;
 }
 
-.grid-container {
+.form-container {
   position: relative;
 }
 
@@ -30,9 +30,14 @@ text-align: center;
   height: 45px;
 }
 
+.div-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
 .simon-dice {
   background: linear-gradient(to bottom, #111 0%, #222 100%);
-  width: 60vmin;
+  width: 58vmin;
   height: 50vmin;
   display: flex;
   flex-wrap:wrap;
@@ -41,10 +46,16 @@ text-align: center;
   box-shadow: 0 8px 0 #111;
 }
 
+.cuadro {
+  opacity: 0.7;
+  transition: opacity 500ms;
+}
+
 .boton-verde {
   background: #27ae60;
   border-radius: 4%;
   width: 259px;
+  margin-left: 25px;
   height: 90%;
   box-shadow: 0 8px 0 #1e8549;
 }
@@ -55,6 +66,7 @@ text-align: center;
   width: 259px;
   height: 90%;
   box-shadow: 0 8px 0 #da2e1b;
+  margin-left: 20px;
 }
 
 .boton-azul {
@@ -63,12 +75,14 @@ text-align: center;
   width: 259px;
   height: 90%;
   box-shadow: 0 8px 0 #1f74ad;
+   margin-left: 20px;
 }
 
 .boton-amarillo {
   background: #f1c40f;
-    border-radius: 4%;
+  border-radius: 4%;
   width: 259px;
+  margin-left: 25px;
   height: 90%;
   box-shadow: 0 8px 0 #c19c0b;
 }
@@ -83,16 +97,21 @@ text-align: center;
   border: none;
   color: white;
   font-family: 'Bebas Neue', cursive;
+  text-align: center;
 }
 
 .puntaje-ronda,
 .puntaje-total {
-  max-width: 25px;
+  max-width: 40px;
 }
 
 .mensaje {
   display: flex;
   justify-content: center;
+}
+
+#mensaje {
+  width: 100%
 }
 
 .start {
@@ -101,9 +120,17 @@ text-align: center;
 }
 
 .btn-start {
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(to bottom, #111 0%, #222 100%);
   border-radius: 4px;
+  color: white;
   border: none;
-  box-shadow: 0 4px 0 darkslategrey;
+  box-shadow: 0 8px 0 #111;
+}
+
+.btn-start:hover {
+  color: red;
+  transition-delay: 13ms; 
 }
 
 .custom-shape-divider-bottom-1621175470 {
@@ -158,4 +185,8 @@ text-align: center;
 
 .fa-github {
   color: white;
+}
+
+.animate__animated.animate__fadeOutUp {
+  --animate-duration: 2s;
 }
