@@ -5,24 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/styles/styles.css">
+  <link rel="stylesheet" href="./public/styles/styles.css">
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/90abbd5f29.js" crossorigin="anonymous"></script>
   <title>Simon Dice</title>
 </head>
 
 <body>
-  <audio src="/src/sounds/simon-blue.mp3" id="simon-blue"></audio>
-  <audio src="/src/sounds/simon-red.mp3" id="simon-red"></audio>
-  <audio src="/src/sounds/simon-yellow.mp3" id="simon-yellow"></audio>
-  <audio src="/src/sounds/simon-green.mp3" id="simon-green"></audio>
-  <audio src="/src/sounds/simon-correct.mp3" id="simon-correct"></audio>
-  <audio src="/src/sounds/simon-wrong.mp3" id="simon-wrong"></audio>
-  <audio src="/src/sounds/simon-start.wav" id="simon-start"></audio>
-  <audio src="/src/sounds/simon-puntaje-maximo.wav" id="simon-top-score"></audio>
-  <audio src="/src/sounds/simon-puntaje.wav" id="simon-score"></audio>
+  <audio src="./src/sounds/simon-blue.mp3" id="simon-blue"></audio>
+  <audio src="./src/sounds/simon-red.mp3" id="simon-red"></audio>
+  <audio src="./src/sounds/simon-yellow.mp3" id="simon-yellow"></audio>
+  <audio src="./src/sounds/simon-green.mp3" id="simon-green"></audio>
+  <audio src="./src/sounds/simon-correct.mp3" id="simon-correct"></audio>
+  <audio src="./src/sounds/simon-wrong.mp3" id="simon-wrong"></audio>
+  <audio src="./src/sounds/simon-start.wav" id="simon-start"></audio>
+  <audio src="./src/sounds/simon-puntaje-maximo.wav" id="simon-top-score"></audio>
+  <audio src="./src/sounds/simon-puntaje.wav" id="simon-score"></audio>
 
   <div class="custom-shape-divider-top-1621178269">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -42,7 +43,7 @@
     <form class="form-container" id="form">
       <div class="row">
         <div class="imagen">
-          <img class="img-simon" src="/src/imgs/simon-dice1.png" alt="Simon Dice">
+          <img class="img-simon" src="./src/imgs/simon-dice1.png" alt="Simon Dice">
         </div>
       </div>
       <div class="mt-4 row justify-content-center">
@@ -143,7 +144,7 @@
             </div>
             <div class="col-6">
               <div class="puntaje-maximo">
-                <img src="/src/imgs/trophy.png" class="trofeo" alt="trofeo">
+                <img src="./src/imgs/trophy.png" class="trofeo" alt="trofeo">
                 <label for="puntaje-maximo" id="puntaje-maximo">Puntaje Máximo:</label>
                 <input type="text" name="puntajemaximo" id="puntaje-maximo" class="puntaje-total" value="0" disabled>
               </div>
@@ -194,7 +195,7 @@
       </div>
     </div>
   </div>
-  <script src="/src/js/main.js"></script>
+  <script src="./src/js/main.js"></script>
 </body>
 
 </html>
