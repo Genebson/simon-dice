@@ -15,15 +15,15 @@ const topScoreSound = document.querySelector('#simon-top-score');
 
 $form.start.onclick = function () {
   startSound.play()
-  comenzarJuego()
+  iniciarJuego()
   mensajeAutomatico('¡Comencemos! 🔮')
   ronda = 0
   actualizarPuntaje(ronda)
   bloquearInputUsuario
 }
 
-function comenzarJuego() {
-  reiniciarRonda()
+function iniciarJuego() {
+  reiniciarJuego()
   manejarRonda()
   ocultarBotonStart()
 }
@@ -31,9 +31,8 @@ function comenzarJuego() {
 function manejarRonda() {
   bloquearInputUsuario()
 
-  const $nuevoCuadro = obtenerCuadroAleatorio()
-  secuenciaMaquina.push($nuevoCuadro)
-  console.log(secuenciaMaquina);
+  const $nuevoPad = padRandom()
+  secuenciaMaquina.push($nuevoPad)
 
   const delayUsuario = (secuenciaMaquina.length + 1) * 1000
 
@@ -51,13 +50,11 @@ function manejarRonda() {
   }, delayUsuario)
 
   secuenciaUsuario = []
-  console.log(secuenciaUsuario);
   actualizarPuntaje(ronda)
 }
 
 function actualizarPuntaje(ronda) {
   $form.puntaje.value = ronda
-  console.log(ronda);
 }
 
 function puntajeMaximo() {
@@ -76,7 +73,7 @@ function mensajeAutomatico(mensaje) {
   $form.mensaje.value = mensaje
 }
 
-function obtenerCuadroAleatorio() {
+function padRandom() {
   const $cuadros = document.querySelectorAll('.cuadro')
   const indice = Math.floor(Math.random() * $cuadros.length)
   return $cuadros[indice]
@@ -110,7 +107,6 @@ function bloquearInputUsuario() {
 
   $cuadros.forEach(function ($cuadro) {
     $cuadro.onclick = function () {
-      console.log('bloqueado');
     }
   })
 }
@@ -125,7 +121,7 @@ function desbloquearInputUsuario() {
 function perder() {
   bloquearInputUsuario()
   mensajeAutomatico(textoPerdedor())
-  reiniciarRonda()
+  reiniciarJuego()
   mostrarBotonStart()
 }
 
@@ -169,7 +165,7 @@ function textoGanador() {
   return frases[fraseAleatoria];
 }
 
-function reiniciarRonda() {
+function reiniciarJuego() {
   secuenciaMaquina = []
   secuenciaUsuario = []
   ronda = 0
